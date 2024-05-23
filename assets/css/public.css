@@ -29,8 +29,3 @@ a{
 ul{
     list-style: none;
 }
-@media ( max-width:900px ){
-    .nav{
-        display: none;
-    }
-}

@@ -5,6 +5,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 20px 0;
     background-color: #fff;
+    z-index: 1;
 }
 .header .logo {
     display: flex;
@@ -40,7 +41,70 @@
     background-color: var(--maincolor);
     color:#ffffff;
 }
-/*start main section*/
+.bars-menu{
+    display: none;
+}
+@media ( max-width:900px ){
+    .nav{
+        display: none;
+    }
+    .bars-menu{
+        display: inline-block;
+    }
+    .auth{
+        display: none;
+    }
+}
+@media(max-width:321px){
+    .logo a{
+        display: none;
+    }
+}
+/* start main secton available-courses 
+.available-course{
+    margin-top: 20px;
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.available-course .available-item img{
+    width: 135px;
+    height: 140px;
+}
+.available-item{
+    width:calc((100% - 40px) / 2)  ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 7.437575340270996px 7.437575340270996px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+.available-course .available-item{
+    width: calc((100% - 40px) / 2);
+}
+.available-item .cource{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+.available-item .cource .details{
+    display: flex;
+    flex-wrap: wrap;
+}
+.available-item .cource .views{
+    font-size: 7px;
+    color: #545BE8;
+}
+.available-item .cource span{
+    font-size: 9px;
+    color: #969696;
+}
+*/
+
+/*start main section testimonials*/
 .testimonials {
    text-align: center;
    padding: 40px 0;
@@ -104,7 +168,15 @@
 .testimonials h2{
     margin-bottom: 20px;
 }
-
+@media (max-width:700px)
+{
+    .testimonial{
+        width: 100%;
+    }
+    .testimonial p{
+        font-size: 14px;
+    }
+}
 
 /* start footer*/
 .footer{
