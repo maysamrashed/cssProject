@@ -62,6 +62,173 @@
 }
 /*end header*/
 /*start main*/
+/*start section soso*/
+.soso{
+    padding: 30px;
+    margin-top: 30px;
+}
+.left-side , .right-side{
+    width: calc((100% - 40px) / 2);
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+}
+.left-side h4:first-of-type{
+    font-family: var(--subfoont);
+    color: var(--maincolor);
+    font-size: 15px;
+}
+.left-side p:first-of-type{
+    font-size: 30px;
+    font-weight: bold;
+}
+.left-side p:first-of-type .left-course{
+    color: var(--maincolor);
+}
+.left-side p:last-of-type{
+    color: #969696;
+    font-size: 15px;
+}
+.left-side .left-side-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.left-side .left-side-item a{
+    border: 1px solid var(--maincolor);
+    background-color: var(--maincolor);
+    color: #ffffff;
+    border-radius: 27.61815071105957px ;
+    font-family: var(--subfoont);
+    padding: 10px 20px;
+}
+.left-side .left-side-item .Video{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-content: center;
+}
+.left-side .left-side-item .Video img{
+    width: 20px;
+    height: 20px;
+}
+.right-side img{
+    width: 400px;
+    height: 400px;
+   }
+@media(max-width:800px){
+
+    .right-side img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media(max-width:650px){
+    .left-side {
+        font-size: 10px;
+    }
+    .left-side p:first-of-type{
+        font-size: 15px;
+    }
+}
+@media(max-width:450px){
+    .left-side , .right-side{
+        width: 100%;
+    }
+    .left-side p:last-of-type{
+        font-size: 10px;
+    }
+    .right-side img{
+        width: 200px;
+        height: 200px;
+    }
+}
+/*end section soso*/
+/*start section what we give*/
+.what-we-give{
+    padding: 40px 0;
+    background:  #f5f5f5;
+    margin-top: 40px;
+}
+.we-give , .you-get{
+    width: calc((100% - 20px) /2);
+}
+.we-give{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.we-give p:first-of-type{
+    color: #545BE8;
+    font-size: 15px;
+    font-family: var(--subfoont);
+}
+.we-give h3{
+    color: #131e31;
+    font-size: 30px;
+}
+.we-give p:last-of-type{
+    color: #969696;
+    font-size: 15px;
+}
+.you-get {
+    display: flex;
+    gap: 10px;
+    
+}
+.you-get .course-items{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #545be8;
+    padding: 20px;
+    border-radius: 12.111112594604492px;
+}
+.you-get .course-items img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+.you-get .course-items h3{
+    font-family: var(--subfoont);
+    font-size: 20px;
+    color: #ffffff;
+}
+.you-get .course-items p{
+    color: #dddddd;
+    font-size: 15px;
+}
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+.icon img{
+    width: 25px;
+    height: 25px;
+}
+@media(max-width:970px){
+    .we-give , .you-get{
+        width: 100%;
+    }
+    .we-give{
+        margin-bottom: 5px;
+    }
+}
+@media(max-width:500px){
+    .you-get{
+        flex-wrap: wrap;
+    }
+}
+/*end section what we give*/
 /*start section pepole-take-course*/
 .pepole-take-course{
     background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
